@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=no">
+		<title>Template NEOS v1</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="grid.css">
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="lightbox.min.css">
+		<script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+		<script type="text/javascript">
+			$(window).on('scroll', function(){
+				if($(window).scrollTop()){
+					$('nav').addClass('black');
+				}
+				else
+				{
+					$('nav').removeClass('black')
+				}
+			})
+			$(document).ready(function(){
+				$(".menu h4").click(function(){
+					$("nav ul").toggleClass("active")
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<div class="responsive-bar">
+			<div class="logo">
+				<img src="images/logo.png">
+			</div>
+			<div class="menu">
+				<h4>Menu</h4>
+			</div>
+		</div>
+		<nav>
+			<div class="logo">
+				<img src="images/logo.png">
+			</div>
+			<ul>
+				<li><a href="#start" class="active">NEOS</a></li>
+				<li><a href="#omnie">O mnie</a></li>
+				<li><a href="#galeria">Galeria</a></li>
+				<li><a href="#kontakt">Kontakt</a></li>
+			</ul>
+		</nav>
+		<section class="sec1" id="start">
+			<h1>NEOS</h1>
+			<p>Template v1 - To jest przykładowy szablon</p>
+		</section>
+		<script src="js/script.js"></script>
+	</body>
