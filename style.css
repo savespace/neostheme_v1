@@ -169,3 +169,8 @@ section.sec1 p {
 	}
 }
 
+/*O MNIE*/
+.about {
+	text-align: center;
+	padding: 80px 0 80px;
+}
